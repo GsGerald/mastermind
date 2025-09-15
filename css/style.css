@@ -2,11 +2,10 @@ body {
   background:radial-gradient(#12cd59, #11998E);
   margin: 0;
   padding: 0;
-  
 }
 
-.board {
-  background:radial-gradient(#9e9e9e, #757575);
+.game-board {
+  background:radial-gradient(#bfb6b6, #757575);
   width: 30%;
   min-width: 400px;
   height: 96vh;
@@ -18,7 +17,6 @@ body {
   height: 15%;
   border: 1px solid black;
 }
-
 .answer-box {
   text-align: center;
   font-size: 30px;
@@ -26,12 +24,15 @@ body {
   height: 100%;
   border:1px solid black;
 }
-.answer{
+.answer {
   width: 70%;
   height: 100%;
   border: 1px;
   margin: 0 auto;
   color: red;
+}
+.timer {
+  border-box: 1px;
 }
 
 .button-container {
@@ -43,7 +44,7 @@ body {
   width: 100%;
   height:80%;
   background-color:rgba(109, 54, 54, 0.181);
-  border:1px solid rgb(104, 20, 213);
+  border:1px solid black;
   margin: auto;
 }
 
@@ -57,8 +58,10 @@ body {
   height: 80%;
   border: 1px solid black;
 }
+
 .selection-container {
+  box-sizing: 30px;
   width:100%;
-  height: 10%;
-  border: 1px solid red
+  height: 100%;
+  border: 1px solid blue
 }

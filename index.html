@@ -8,19 +8,26 @@
   <script defer src="./js/app.js"></script>
 </head>
 <body>
-  <div class="board">
-    <div class="answer-container">
-    <div class="answer-box">Mastermind</div>
-     <div class="answer"></div>
-  </div>
-  <div class="button-container">
-  <div class="submit-btn">
-    <h3 class="text"></h3>
+    <div class="game-container"></div>
+    <div class="header"></div>
+     <h1 class="title">Mastermind</h1>
+  <div class="timer" id="timer">00:00</div>
+  <div class="game-board">
+    <div class="guess-area">
+      <div id="guessRows"></div>
     </div>
   </div>
+  <button class="submit-btn" id="submitBtn"onClick="submitGuess()">check Guess</button>
+  </div>
+  <div class="color-palette">
+    <div class="color-option color-red" data-color= "red"></div>
+    <div class="color-option color-blue" data-color= "blue"></div>
+    <div class="color-option color-green" data-color= "green"></div>
+    <div class="color-option color-yellow" data-color= "yellow"></div>
+    <div class="color-option color-purple" data-color= "purple"></div>
+    <div class="color-option color-orange" data-color= "orange"></div>
+  </div>
 </div>
-<div class="guess-container">
-
 </div>
 <div class="selection-container"></div>
 </body>
