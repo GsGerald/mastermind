@@ -1,5 +1,13 @@
-const menuButtons = querySelectorAll(".menu-button");
-menuButtonsforEach(button => {
+document.addEventListener('DOMContentLoaded', () => {
+    const showPage = (pageId) => {
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
+        const target = document.getElementById(pageId);
+        if (target) target.classList.add('active');
+    };
+})
+const menuButtons = document.querySelectorAll(".menu-button");
+
+menuButtons.forEach(button => {
     button.addEventListener("click", () => {
         const action = button.getAttribute("data-action");
         if (action === "start") {
@@ -32,5 +40,8 @@ document.querySelectorAll(".difficulty-button").forEach(button => {
 
         alert('Starting game on ${difficulty.toupperCase()} model');
     });
-}
-);
+});
+
+document.querySelector(".back-button").addEventListener("click", () => {
+    showPage("mainMenu");
+});
