@@ -1,3 +1,39 @@
+/*-------------------------------- Constants --------------------------------*/
+const EASY_SETTINGS = {
+maxAttempts: 12,
+codeLength: 4,
+colors: ['red', 'blue', 'green', 'yellow']
+};
+
+const NORMAL_SETTINGS = {
+maxAttempts: 10,
+codeLength: 4,
+colors: ['red', 'blue', 'green', 'yellow', 'orange', 'purple']
+};
+
+const HARD_SETTINGS = {
+maxAttempts: 8,
+codeLength: 5,
+colors: ['red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'cyan']
+};
+
+/*-------------------------------- Variables --------------------------------*/
+let currentDifficulty = 'normal';
+let maxAttempts = 10;
+let codeLength = 4;
+let gameColors = ['red', 'blue', 'green', 'yellow', 'orange', 'purple'];
+let secretCode = [];
+let currentAttempt = 0;
+let selectedColors = [];
+let gameStartTime = null;
+let timerInterval = null;
+let gameActive = false;
+/*------------------------ Cached Element References ------------------------*/
+
+/*----------------------------- Event Listeners -----------------------------*/
+
+/*-------------------------------- Functions --------------------------------*/
+
 document.addEventListener('DOMContentLoaded', () => {
     const showPage = (pageId) => {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'))
