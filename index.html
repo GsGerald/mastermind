@@ -18,8 +18,6 @@
             <button class="menu-button" data-action="choose-level">Choose Your Level</button>
         </div> 
 
-
-    
     <div id="difficultySelect" class="page">
         <h1>MasterMind</h1>
         <button class="difficulty-button" data-difficulty="easy">EASY</button>
@@ -27,6 +25,27 @@
         <button class="difficulty-button" data-difficulty="hard">HARD</button>
         <button class="back-button" data-action="back-to-main">Back</button>
     </div>
+
+    <div id="gameBoard" class="page">
+        <div class="game-header">
+            <h2>MASTERMIND</h2>
+            <div class="timer" id="timer">TIMER: 00:00</div>
+</div>
+        <div class="game-board">
+            <div class="attempts-section">
+                <div id="attempts-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="color-palette" id="colorPalette">
+    </div>
+        <button class="submit-button" id="submitButton" disabled>Submit Guess</button>
+        <button class="back-button" data-action="quit-game">Quit Game</button>
+        </div>
+        <div id="gameResult" class="page">
+        <h1>MasterMind</h1>
+        <div id="resultMessage" class="result-message">
 
     
 </div>

@@ -86,4 +86,28 @@ background: #ff9800;
 transform: translateY(-2px);
 box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
 }
+.submit-button {
+padding: 10px 20px;
+background: #4CAF50;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 1rem;
+cursor: pointer;
+margin: 10px;
+transition: all 0.3s ease;
+}
+.submit-button:hover:not(:disabled) {
+background: #45a049;
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.submit-button:disabled {
+background: #666;
+cursor: not-allowed;
+transform: none;
+box-shadow: none;
+}
+
 

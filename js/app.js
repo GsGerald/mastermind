@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 })
 const menuButtons = document.querySelectorAll(".menu-button");
-
+ 
 menuButtons.forEach(button => {
     button.addEventListener("click", () => {
         const action = button.getAttribute("data-action");
@@ -14,7 +14,7 @@ menuButtons.forEach(button => {
             console.log("Game started!");
         } else if (action === "settings") {
             console.log("Opening settings...")
-        }
+        }    
     });
 });
 function showPage(pageId) {
