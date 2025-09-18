@@ -142,7 +142,18 @@ h1 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid #666;
+    background-color: transparent;
+}
+
+.feedback-peg.black {
+    background-color: #000;
+    border-color: #333;
+}
+
+.feedback-peg.white {
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 .current-attempt {
@@ -236,9 +247,6 @@ h1 {
 .purple { background-color: #9c27b0; }
 .pink { background-color: #e91e63; }
 .cyan { background-color: #00bcd4; }
-
-.black { background-color: #333; }
-.white { background-color: #fff; }
 
 @media (max-width: 768px) {
 .container {

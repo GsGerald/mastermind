@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MasterMind Game</title>
-    <script src="js/app.js" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MasterMind Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/app.js" defer></script>
 </head>
 <body>
-     <div class="container">
-        
-        <div id="mainMenu" class="page active">
-            <h1>MasterMind</h1>
-            <button class="menu-button" data-action="start">START</button>
-            <button class="menu-button" data-action="choose-level">Choose Your Level</button>
-        </div> 
+  <div class="container">
+    <!-- Main Menu -->
+    <div id="mainMenu" class="page active">
+      <h1>MasterMind</h1>
+      <button id="startBtn" class="menu-button" data-action="start">START</button>
+      <button id="chooseLevelBtn" class="menu-button" data-action="choose-level">Choose Your Level</button>
+    </div>
 
+    <!-- Difficulty Select -->
     <div id="difficultySelect" class="page">
-        <h1>MasterMind</h1>
-        <button class="difficulty-button" data-difficulty="easy">EASY</button>
-        <button class="difficulty-button" data-difficulty="normal">NORMAL</button>
-        <button class="difficulty-button" data-difficulty="hard">HARD</button>
-        <button class="back-button" data-action="back-to-main">Back</button>
+      <h1>MasterMind</h1>
+      <button id="easyBtn"   class="difficulty-button" data-difficulty="easy">EASY</button>
+      <button id="normalBtn" class="difficulty-button" data-difficulty="normal">NORMAL</button>
+      <button id="hardBtn"   class="difficulty-button" data-difficulty="hard">HARD</button>
+      <button id="backToMainBtn" class="back-button">Back</button>
     </div>
 
+    <!-- Game Board -->
     <div id="gameBoard" class="page">
-        <div class="game-header">
-            <h2>MASTERMIND</h2>
-            <div class="timer" id="timer">TIMER: 00:00</div>
-</div>
-        <div class="game-board">
-            <div class="attempts-section">
-                <div id="attempts-container">
-            </div>
+      <div class="game-header">
+        <h2>MASTERMIND</h2>
+        <div class="timer" id="timer">TIMER: 00:00</div>
+      </div>
+
+      <div class="game-board">
+        <div class="attempts-section">
+          <div id="attempts-container"></div>
         </div>
+      </div>
+
+      <div class="color-palette" id="colorPalette"></div>
+
+      <button class="submit-button" id="submitButton" disabled>Submit Guess</button>
+      <button class="back-button" id="quitGameBtn">Quit Game</button>
     </div>
 
-    <div class="color-palette" id="colorPalette">
+    <!-- Result Page -->
+    <div id="gameResult" class="page">
+      <h1>MasterMind</h1>
+      <div id="resultMessage" class="result-message"></div>
+      <button class="menu-button" id="playAgainBtn">Play Again</button>
+      <button class="back-button" id="changeDifficultyBtn">Change Difficulty</button>
     </div>
-        <button class="submit-button" id="submitButton" disabled>Submit Guess</button>
-        <button class="back-button" data-action="quit-game">Quit Game</button>
-        </div>
-        <div id="gameResult" class="page">
-        <h1>MasterMind</h1>
-        <div id="resultMessage" class="result-message">
-
-    
-</div>
+  </div>
 </body>
 </html>
